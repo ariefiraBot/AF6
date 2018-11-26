@@ -13,9 +13,9 @@ import youtube_dl
 #=============
 cl = LINE() 
 cl.log("Auth Token : " + str(cl.authToken))
-channel = LineChannel(cl)
+#channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
-eopoll = EOPoll(cl)
+oepoll = OEPoll(cl)
 call = cl
 lineProfile = cl.getProfile()
 lineSettings = cl.getSettings()
@@ -24,7 +24,7 @@ responsename1 = cl.getProfile().displayName
 
 ki = LINE()
 ki.log("Auth Token : " + str(ki.authToken))
-channel1 = LineChannel(ki)
+#channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 lineProfile = ki.getProfile()
 lineSettings = ki.getSettings()
@@ -33,7 +33,7 @@ responsename2 = ki.getProfile().displayName
 
 kk = LINE()
 kk.log("Auth Token : " + str(kk.authToken))
-channel2 = LineChannel(kk)
+#channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 lineProfile = kk.getProfile()
 lineSettings = kk.getSettings()
@@ -42,7 +42,7 @@ responsename3 = ki.getProfile().displayName
 
 kc = LINE()
 kc.log("Auth Token : " + str(kc.authToken))
-channel3 = LineChannel(kc)
+#channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 lineProfile = kc.getProfile()
 lineSettings = kc.getSettings()
@@ -51,7 +51,7 @@ responsename4 = kc.getProfile().displayName
 
 km = LINE()
 km.log("Auth Token : " + str(km.authToken))
-channel4 = LineChannel(km)
+#channel4 = LineChannel(km)
 km.log("Channel Access Token : " + str(channel4.channelAccessToken))
 lineProfile = km.getProfile()
 lineSettings = km.getSettings()
@@ -60,7 +60,7 @@ responsename5 = km.getProfile().displayName
 
 kb = LINE()
 kb.log("Auth Token : " + str(kb.authToken))
-channel5 = LineChannel(kb)
+#channel5 = LineChannel(kb)
 kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
 lineProfile = kb.getProfile()
 lineSettings = kb.getSettings()
@@ -69,7 +69,7 @@ responsename6 = kb.getProfile().displayName
 
 sw = LINE()
 sw.log("Auth Token : " + str(sw.authToken))
-channel6 = LineChannel(sw)
+#channel6 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
 lineProfile = sw.getProfile()
 lineSettings = sw.getSettings()
@@ -3113,7 +3113,7 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
-                                ki.sendMessage(msg.to,"「Bye bye」 ",+str(G.name) " 「Jangan Lupa Invite lg」")
+                                ki.sendMessage(msg.to,"「Bye bye」 "+str(G.name))
                                 ki.leaveGroup(msg.to)
                                 kk.leaveGroup(msg.to)
                                 kc.leaveGroup(msg.to)
