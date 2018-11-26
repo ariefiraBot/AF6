@@ -1,0 +1,6 @@
+read = {
+    "readPoint":{},
+    "readMember":{},
+    "readTime":{},
+    "ROM":{},
+}
