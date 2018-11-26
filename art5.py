@@ -14,7 +14,7 @@ import youtube_dl
 cl = LINE() 
 cl.log("Auth Token : " + str(cl.authToken))
 #channel = LineChannel(cl)
-cl.log("Channel Access Token : " + str(channel.channelAccessToken))
+#cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 oepoll = OEPoll(cl)
 call = cl
 lineProfile = cl.getProfile()
@@ -25,7 +25,7 @@ responsename1 = cl.getProfile().displayName
 ki = LINE()
 ki.log("Auth Token : " + str(ki.authToken))
 #channel1 = LineChannel(ki)
-ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
+#ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 lineProfile = ki.getProfile()
 lineSettings = ki.getSettings()
 Amid = ki.getProfile().mid
@@ -34,7 +34,7 @@ responsename2 = ki.getProfile().displayName
 kk = LINE()
 kk.log("Auth Token : " + str(kk.authToken))
 #channel2 = LineChannel(kk)
-kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
+#kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 lineProfile = kk.getProfile()
 lineSettings = kk.getSettings()
 Bmid = ki.getProfile().mid
@@ -70,7 +70,7 @@ responsename4 = kc.getProfile().displayName
 sw = LINE()
 sw.log("Auth Token : " + str(sw.authToken))
 #channel6 = LineChannel(sw)
-sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
+#sw.log("Channel Access Token : " + str(channel6.channelAccessToken))
 lineProfile = sw.getProfile()
 lineSettings = sw.getSettings()
 Zmid = sw.getProfile().mid
@@ -83,8 +83,8 @@ owner = ["ue6d8f9ef8f820fad9c65bbb5d1ec714b"]
 admin = ["ue6d8f9ef8f820fad9c65bbb5d1ec714b"]
 staff = ["ue6d8f9ef8f820fad9c65bbb5d1ec714b"]
 
-KAC = [cl,ki,kk,kc]
-ABC = [cl,ki,kk,kc]
+KAC = [cl,ki,kk,kc,sw]
+ABC = [cl,ki,kk,kc,sw]
 Bots = [mid,Amid,Bmid,Cmid,Zmid]
 Saints = admin + staff
 
