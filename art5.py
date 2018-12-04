@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*- 
-import linepy
+import LineAPI
 from linepy import *
 from akad.ttypes import *
 from multiprocessing import Pool, Process
@@ -10,7 +10,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
-#=============
+print("link sb")
 cl = LINE() 
 cl.log("Auth Token : " + str(cl.authToken))
 #channel = LineChannel(cl)
@@ -21,7 +21,7 @@ lineProfile = cl.getProfile()
 lineSettings = cl.getSettings()
 mid = cl.getProfile().mid
 responsename1 = cl.getProfile().displayName
-
+print("asist 1")
 ki = LINE()
 ki.log("Auth Token : " + str(ki.authToken))
 #channel1 = LineChannel(ki)
@@ -30,7 +30,7 @@ lineProfile = ki.getProfile()
 lineSettings = ki.getSettings()
 Amid = ki.getProfile().mid
 responsename2 = ki.getProfile().displayName
-
+print("asist 2")
 kk = LINE()
 kk.log("Auth Token : " + str(kk.authToken))
 #channel2 = LineChannel(kk)
@@ -39,7 +39,7 @@ lineProfile = kk.getProfile()
 lineSettings = kk.getSettings()
 Bmid = ki.getProfile().mid
 responsename3 = ki.getProfile().displayName
-
+print("asist 3")
 kc = LINE()
 kc.log("Auth Token : " + str(kc.authToken))
 #channel3 = LineChannel(kc)
@@ -48,25 +48,25 @@ lineProfile = kc.getProfile()
 lineSettings = kc.getSettings()
 Cmid = kc.getProfile().mid
 responsename4 = kc.getProfile().displayName
-
-#km = LINE()
-#km.log("Auth Token : " + str(km.authToken))
+print("asist 4")
+km = LINE()
+km.log("Auth Token : " + str(km.authToken))
 #channel4 = LineChannel(km)
-#km.log("Channel Access Token : " + str(channel4.channelAccessToken))
-#lineProfile = km.getProfile()
-#lineSettings = km.getSettings()
-#Dmid = km.getProfile().mid
-#responsename5 = km.getProfile().displayName
-
-#kb = LINE()
-#kb.log("Auth Token : " + str(kb.authToken))
+km.log("Channel Access Token : " + str(channel4.channelAccessToken))
+lineProfile = km.getProfile()
+lineSettings = km.getSettings()
+Dmid = km.getProfile().mid
+responsename5 = km.getProfile().displayName
+print("asist 5")
+kb = LINE()
+kb.log("Auth Token : " + str(kb.authToken))
 #channel5 = LineChannel(kb)
-#kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
-#lineProfile = kb.getProfile()
-#lineSettings = kb.getSettings()
-#Emid = kb.getProfile().mid
-#responsename6 = kb.getProfile().displayName
-
+kb.log("Channel Access Token : " + str(channel5.channelAccessToken))
+lineProfile = kb.getProfile()
+lineSettings = kb.getSettings()
+Emid = kb.getProfile().mid
+responsename6 = kb.getProfile().displayName
+print("asist ghost")
 sw = LINE()
 sw.log("Auth Token : " + str(sw.authToken))
 #channel6 = LineChannel(sw)
@@ -83,9 +83,9 @@ owner = ["ue6d8f9ef8f820fad9c65bbb5d1ec714b"]
 admin = ["ue6d8f9ef8f820fad9c65bbb5d1ec714b"]
 staff = ["ue6d8f9ef8f820fad9c65bbb5d1ec714b"]
 
-KAC = [cl,ki,kk,kc,sw]
-ABC = [cl,ki,kk,kc,sw]
-Bots = [mid,Amid,Bmid,Cmid,Zmid]
+KAC = [cl,ki,kk,kc,km,kb,sw]
+ABC = [cl,ki,kk,kc,km,kb,sw]
+Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid]
 Saints = admin + staff
 
 protectqr = []
